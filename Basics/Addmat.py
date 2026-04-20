@@ -1,0 +1,33 @@
+m = int(input('Enter number of rows in matrix 1:'))  
+n = int(input('Enter number of columns in matrix 1:'))  
+p = int(input('Enter number of rows in matrix 2:'))  
+q = int(input('Enter number of columns in matrix 2:'))  
+ 
+if (m != p or n != q):  
+    print('Matrix addition is not possible')  
+else:      
+    a = []      
+    b = []      
+    print('Enter Elements in Matrix A')      
+    for i in range(m):  
+        temp = []          
+        for j in range(n):              
+            temp.append(int(input()))  
+        a.append(temp)      
+    print('Enter Elements in Matrix B')      
+    for i in range(p):  
+        temp = []          
+        for j in range(q):              
+            temp.append(int(input()))  
+        b.append(temp)      
+    res = []      
+    for i in range(m):  
+        temp = []          
+        for j in range(q):                  
+            temp.append(a[i][j] + b[i][j])          
+        res.append(temp)      
+    print('Resultant Matrix:')      
+    for i in range(m):          
+        for j in range(n):  
+            print(res[i][j], end=' ')  
+        print()

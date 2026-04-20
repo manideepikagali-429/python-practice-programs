@@ -1,0 +1,8 @@
+a=int(input('real part of first complex number'))
+b=int(input('imaginary part of first complex number'))
+x=complex(a,b)
+c=int(input('real part of second complex number'))
+d=int(input('imaginary part of second complex number'))
+y=complex(c,d)
+print("addition of complex numbers",x+y)
+print("multiplication of complex numbers",x*y)
